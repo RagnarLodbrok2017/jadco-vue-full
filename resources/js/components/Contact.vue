@@ -1,6 +1,6 @@
 <template>
     <!-- Contact Section -->
-    <section id="contact" class="contact-section section">
+    <section id="contact" class="contact-section vue-contact section">
         <div class="container" v-if="!loading">
             <div class="row">
                 <div class="contact-top">

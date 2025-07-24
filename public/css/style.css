@@ -32,8 +32,9 @@ body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     /* overflow-x: auto; */
-    width: 100%; /* Ensure body doesn't expand beyond viewport */
-} 
+    width: 100%;
+    /* Ensure body doesn't expand beyond viewport */
+}
 
 a {
     text-decoration: none;
@@ -50,7 +51,8 @@ a:hover {
     padding: 10px 25px;
     font-weight: var(--font-weight-semibold);
     transition: all var(--transition-speed) var(--transition-timing);
-    font-size: initial; /* Ensure any font-size overrides from backend are reset */
+    font-size: initial;
+    /* Ensure any font-size overrides from backend are reset */
 }
 
 .btn-talk {
@@ -127,6 +129,7 @@ a:hover {
         transform: translateY(-80px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -139,6 +142,7 @@ a:hover {
         transform: translateX(80px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -151,6 +155,7 @@ a:hover {
         opacity: 0;
         visibility: hidden;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -164,6 +169,7 @@ a:hover {
         opacity: 1;
         visibility: visible;
     }
+
     100% {
         transform: translateX(-100px);
         opacity: 0;
@@ -231,14 +237,17 @@ a:hover {
     overflow: hidden;
     /* border-bottom: 5px solid var(--gray-color); */
 }
+
 .heading .left-col {
     position: relative;
 }
-.heading .left-col ,
-.heading .right-col ,
-.heading .row{
+
+.heading .left-col,
+.heading .right-col,
+.heading .row {
     height: 100%;
 }
+
 .main-heading {
     width: 100%;
     font-size: 4.2rem;
@@ -341,8 +350,8 @@ a:hover {
     object-fit: cover;
 }
 
-#headerCarousel, 
-#headerCarousel .carousel-inner, 
+#headerCarousel,
+#headerCarousel .carousel-inner,
 #headerCarousel .carousel-item {
     height: 100%;
     min-height: 50vh;
@@ -359,7 +368,8 @@ a:hover {
 /* Carousel Styles */
 .carousel-indicators {
     bottom: -10px;
-    display: none; /* Hide default indicators since we're using custom ones */
+    display: none;
+    /* Hide default indicators since we're using custom ones */
 }
 
 .carousel-indicators button {
@@ -411,7 +421,8 @@ a:hover {
     margin: 0 8px;
     position: relative;
     overflow: hidden;
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
 }
 
 .nav-line-fill {
@@ -426,14 +437,16 @@ a:hover {
 
 .nav-line.active .nav-line-fill {
     width: 100%;
-    transition: width 5s linear; /* Match carousel interval */
+    transition: width 5s linear;
+    /* Match carousel interval */
 }
 
 .nav-line.active {
     display: block;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     width: 50px;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -451,12 +464,14 @@ a:hover {
     right: 20px;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover {
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
     background-color: var(--primary-color);
     opacity: 1;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     width: 20px;
     height: 20px;
 }
@@ -473,14 +488,16 @@ a:hover {
     width: 100%;
     height: 100%;
     transition: transform 1.5s ease-in-out;
-    display: none; /* Hide all carousel items by default */
+    display: none;
+    /* Hide all carousel items by default */
 }
 
 /* Only show active, next and previous slides */
 .custom-transition .carousel-item.active,
 .custom-transition .carousel-item-next,
 .custom-transition .carousel-item-prev {
-    display: block; /* Show only these items */
+    display: block;
+    /* Show only these items */
 }
 
 /* Keep proper z-index to prevent overlapping */
@@ -491,7 +508,8 @@ a:hover {
 
 .custom-transition .carousel-item-next,
 .custom-transition .carousel-item-prev {
-    z-index: 2; /* Put transitioning slides on top */
+    z-index: 2;
+    /* Put transitioning slides on top */
 }
 
 /* Initial position for next slide (off-screen) */
@@ -535,6 +553,7 @@ a:hover {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -544,6 +563,7 @@ a:hover {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -553,9 +573,11 @@ a:hover {
     0% {
         transform: translateX(0);
     }
+
     60% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-25%);
     }
@@ -565,9 +587,11 @@ a:hover {
     0% {
         transform: translateX(0);
     }
+
     60% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(25%);
     }
@@ -580,8 +604,10 @@ section {
     transition: all 0.5s ease;
     position: relative;
     overflow: hidden;
-    min-height: 100vh; /* Ensure all sections are at least full viewport height */
-    padding: 80px 0; /* Consistent padding */
+    min-height: 100vh;
+    /* Ensure all sections are at least full viewport height */
+    padding: 80px 0;
+    /* Consistent padding */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -597,6 +623,7 @@ section {
         opacity: 0.8;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -614,10 +641,12 @@ section:after {
         transform: translateY(1200px) scale(1);
         opacity: 1;
     }
+
     80% {
         transform: translateY(-20px) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translateY(0) scale(1);
         opacity: 1;
@@ -630,10 +659,12 @@ section:after {
         transform: translateY(0) scale(1);
         opacity: 1;
     }
+
     20% {
         transform: translateY(-20px) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translateY(-1200px) scale(1);
         opacity: 1;
@@ -647,12 +678,15 @@ section:after {
 .show {
     opacity: 1;
 }
+
 /* Ensure services section scroll is locked */
 .services-section {
     position: relative;
     background-color: var(--light-color);
-    height: 400vh; /* Tall enough for scrolling through all services */
-    overflow: visible; /* Allow scroll effect to work */
+    height: 400vh;
+    /* Tall enough for scrolling through all services */
+    overflow: visible;
+    /* Allow scroll effect to work */
     display: block;
     unicode-bidi: isolate;
     justify-content: center;
@@ -663,7 +697,8 @@ section:after {
 /* Services Layer Container */
 .services-layer-container {
     height: 100vh;
-    width: 100vw; /* Full viewport width for overlay effect */
+    width: 100vw;
+    /* Full viewport width for overlay effect */
     position: absolute;
     top: 0;
     left: 0;
@@ -692,7 +727,8 @@ section:after {
     transition: height 0.3s ease-out;
     background-color: var(--light-color);
     top: 0;
-    max-width: 100%; /* Ensure it doesn't exceed parent width */
+    max-width: 100%;
+    /* Ensure it doesn't exceed parent width */
     left: 0;
     right: 0;
     transform: none;
@@ -724,7 +760,8 @@ section:after {
     height: 100% !important;
     margin: 0 !important;
     display: flex !important;
-    align-items: center !important; /* Center items vertically */
+    align-items: center !important;
+    /* Center items vertically */
 }
 
 .full-screen {
@@ -733,39 +770,52 @@ section:after {
 
 /* Service column styling - simplified */
 .service-stack-item .col-lg-6 {
-    height: 100vh !important; /* Keep !important as this is critical for layout */
+    height: 100vh !important;
+    /* Keep !important as this is critical for layout */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Changed from center */
-    align-items: flex-start; /* Changed from center */
-    position: relative !important; /* Keep !important to prevent JS position changes */
+    justify-content: flex-start;
+    /* Changed from center */
+    align-items: flex-start;
+    /* Changed from center */
+    position: relative !important;
+    /* Keep !important to prevent JS position changes */
     padding: 0;
 }
 
 /* Service content styling - fixed height approach */
 .service-content {
     padding: 5% 0 0 5%;
-    height: 600px !important; /* Keep !important for fixed height consistency */
+    height: 600px !important;
+    /* Keep !important for fixed height consistency */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Changed from center */
+    justify-content: flex-start;
+    /* Changed from center */
     width: 100%;
-    position: relative !important; /* Keep !important to prevent JS position changes */
-    top: 0 !important; /* Keep !important to prevent JS positioning */
-    transform: none !important; /* Keep !important to prevent JS transforms */
-    margin-top: 50px; /* Fixed top margin */
+    position: relative !important;
+    /* Keep !important to prevent JS position changes */
+    top: 0 !important;
+    /* Keep !important to prevent JS positioning */
+    transform: none !important;
+    /* Keep !important to prevent JS transforms */
+    margin-top: 50px;
+    /* Fixed top margin */
 }
 
 /* Adjust content for first service with multiple buttons */
 .first-service .service-content .service-description {
-    margin-bottom: 20px; /* Reduced margin to account for extra button height */
+    margin-bottom: 20px;
+    /* Reduced margin to account for extra button height */
 }
 
 .first-service .service-buttons {
     display: flex;
-    flex-direction: row; /* Ensure buttons are side by side */
+    flex-direction: row;
+    /* Ensure buttons are side by side */
     gap: 15px;
-    margin-top: 20px; /* Reduced from 3rem */
+    margin-top: 20px;
+    /* Reduced from 3rem */
 }
 
 /* Service overlay for darkening effect */
@@ -786,13 +836,15 @@ section:after {
 .service-image {
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    /* Full viewport height */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--light-gray);
-    border-radius: 0; /* Remove border radius */
+    border-radius: 0;
+    /* Remove border radius */
 }
 
 /* Fix image height to prevent overflow */
@@ -800,7 +852,8 @@ section:after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Center the image */
+    object-position: center;
+    /* Center the image */
 }
 
 /* Ensure consistent title positioning */
@@ -833,7 +886,8 @@ section:after {
 .service-buttons {
     display: flex;
     gap: 15px;
-    margin-top: 2rem; /* Consistent margin for all services */
+    margin-top: 2rem;
+    /* Consistent margin for all services */
     position: relative;
 }
 
@@ -1005,7 +1059,8 @@ section:after {
     color: var(--dark-color);
     transition: all 0.3s ease;
     /* margin-left: 25%; */
-    cursor: default; /* Default cursor */
+    cursor: default;
+    /* Default cursor */
 }
 
 /* Hover effects for service names */
@@ -1059,13 +1114,16 @@ section:after {
     position: relative;
     bottom: 0;
     left: 0;
-    opacity: 0; /* Initially hidden, shown when active */
-    visibility: hidden; /* Initially hidden, shown when active */
+    opacity: 0;
+    /* Initially hidden, shown when active */
+    visibility: hidden;
+    /* Initially hidden, shown when active */
     transition: opacity 0.3s ease, visibility 0.3s ease, color 0.3s ease;
 }
 
 .service-content-wrapper .learn-more::after {
-    background-color: rgba(224, 40, 90, 0.05); /* Direct rgba value instead of variable */
+    background-color: rgba(224, 40, 90, 0.05);
+    /* Direct rgba value instead of variable */
 }
 
 .service-item.active .learn-more {
@@ -1082,13 +1140,15 @@ section:after {
     justify-content: center;
     transition: transform 0.3s ease;
     font-size: 4rem;
-    margin-top: 1.3rem; /* Align with service-name */
+    margin-top: 1.3rem;
+    /* Align with service-name */
 }
 
 .service-toggle i {
     color: var(--dark-color);
     transition: transform 0.3s ease, color 0.3s ease;
-    transform: rotate(-45deg); /* Initially rotated to point bottom-right */
+    transform: rotate(-45deg);
+    /* Initially rotated to point bottom-right */
 }
 
 .service-item:hover .service-toggle i {
@@ -1135,12 +1195,51 @@ section:after {
     padding: 80px 0;
     padding-bottom: 0;
     background-color: var(--light-color);
+    min-height: 95vh;
 }
+
+/* Contact Section for Vue components - 90vh */
+.contact-section.vue-contact {
+    min-height: 90vh;
+}
+
+/* Alternative: Target contact sections in Vue router pages */
+[data-page="contact"] .contact-section,
+.vue-app .contact-section,
+#app .contact-section {
+    min-height: 90vh;
+}
+
+/* Hide YouTube and LinkedIn social links in footer/contact section */
+.social-links {
+    display: none !important;
+}
+
+/* Keep the layout but hide social links - maintain spacing */
+.end-footer .d-flex {
+    justify-content: flex-end !important;
+}
+
+/* Alternative: Hide specific social links by icon */
+.social-link:has(.fa-youtube),
+.social-link:has(.fa-linkedin) {
+    display: none !important;
+}
+
+/* Fallback for older browsers that don't support :has() */
+.social-link[href*="youtube"],
+.social-link[href*="linkedin"],
+.social-link i.fa-youtube,
+.social-link i.fa-linkedin {
+    display: none !important;
+}
+
 .contact-top {
     /* margin-bottom: 40px; */
     width: 100%;
     display: block;
 }
+
 .footer-logo .logo {
     width: 180px;
     height: auto;
@@ -1201,19 +1300,17 @@ section:after {
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
-    
+
 }
 
 .contact-value a:hover {
     color: var(--primary-color);
-    background: linear-gradient(
-        90deg, 
-        var(--primary-color) 0%, 
-        #ff6b97 25%, 
-        var(--primary-color) 50%, 
-        #ff6b97 75%, 
-        var(--primary-color) 100%
-    );
+    background: linear-gradient(90deg,
+            var(--primary-color) 0%,
+            #ff6b97 25%,
+            var(--primary-color) 50%,
+            #ff6b97 75%,
+            var(--primary-color) 100%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1226,15 +1323,14 @@ section:after {
 }
 
 .whatsapp-link:hover {
-    color: #25D366; /* WhatsApp green color */
-    background: linear-gradient(
-        90deg, 
-        #25D366 0%, 
-        #5cf396 25%, 
-        #25D366 50%, 
-        #5cf396 75%, 
-        #25D366 100%
-    );
+    color: #25D366;
+    /* WhatsApp green color */
+    background: linear-gradient(90deg,
+            #25D366 0%,
+            #5cf396 25%,
+            #25D366 50%,
+            #5cf396 75%,
+            #25D366 100%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1284,8 +1380,8 @@ section:after {
     transition: all 0.3s ease;
 }
 
-.form-control:focus ~ .form-label,
-.form-control:not(:placeholder-shown) ~ .form-label {
+.form-control:focus~.form-label,
+.form-control:not(:placeholder-shown)~.form-label {
     top: -20px;
     left: 0;
     font-size: 0.75rem;
@@ -1390,14 +1486,12 @@ textarea.form-control:focus {
     position: relative;
     color: var(--primary-color);
     font-weight: 600;
-    background: linear-gradient(
-        90deg, 
-        var(--primary-color) 0%, 
-        #ff6b97 25%, 
-        var(--primary-color) 50%, 
-        #ff6b97 75%, 
-        var(--primary-color) 100%
-    );
+    background: linear-gradient(90deg,
+            var(--primary-color) 0%,
+            #ff6b97 25%,
+            var(--primary-color) 50%,
+            #ff6b97 75%,
+            var(--primary-color) 100%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1469,8 +1563,9 @@ textarea.form-control:focus {
 }
 
 .about-section .section-title {
-    opacity: 1; /* Ensure text is visible by default */
-    position: relative; 
+    opacity: 1;
+    /* Ensure text is visible by default */
+    position: relative;
     z-index: 2;
 }
 
@@ -1496,7 +1591,8 @@ textarea.form-control:focus {
 }
 
 .about-text {
-    opacity: 1; /* Ensure text is visible by default */
+    opacity: 1;
+    /* Ensure text is visible by default */
     width: 90%;
     max-width: 1465px;
     font-size: 2.8rem;
@@ -1511,9 +1607,10 @@ textarea.form-control:focus {
 }
 
 .about-main-description {
-    opacity: 1; /* Ensure text is visible by default */
+    opacity: 1;
+    /* Ensure text is visible by default */
     margin-top: 2.5rem;
-    font-size: 1.6rem ;
+    font-size: 1.6rem;
 }
 
 .about-main-description.animate {
@@ -1521,7 +1618,8 @@ textarea.form-control:focus {
 }
 
 .about-description {
-    opacity: 1; /* Ensure text is visible by default */
+    opacity: 1;
+    /* Ensure text is visible by default */
     line-height: 1.6;
     color: var(--dark-color);
     /* font-size: 1.6rem; */
@@ -1617,6 +1715,7 @@ textarea.form-control:focus {
         transform: translateX(-80px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -1628,10 +1727,12 @@ textarea.form-control:focus {
         transform: translateX(-1000px) scale(0.7);
         opacity: 0.7;
     }
+
     80% {
         transform: translateX(20px) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translateX(0) scale(1);
         opacity: 1;
@@ -1643,10 +1744,12 @@ textarea.form-control:focus {
         transform: translateX(1000px) scale(0.7);
         opacity: 0.7;
     }
+
     80% {
         transform: translateX(-20px) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translateX(0) scale(1);
         opacity: 1;
@@ -1665,15 +1768,17 @@ textarea.form-control:focus {
         transform: translateX(0) scale(1);
         opacity: 1;
     }
+
     20% {
         transform: translateX(20px) scale(1);
         opacity: 1;
     }
+
     100% {
         transform: translateX(-1000px) scale(0.7);
         opacity: 0.7;
     }
-} 
+}
 
 /* Carousel Transition Speed */
 .carousel-item {
@@ -1832,7 +1937,8 @@ textarea.form-control:focus {
 .nav-link.about {
     color: var(--dark-color);
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: var(--primary-color);
     transition: all 0.8s ease;
 }
@@ -1869,7 +1975,7 @@ textarea.form-control:focus {
     transition: transform 0.5s ease-out;
 } */
 
-.about-image-main img, 
+.about-image-main img,
 .about-image-secondary img {
     width: 100%;
     height: auto;
